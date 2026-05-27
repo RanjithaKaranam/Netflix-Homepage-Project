@@ -1,0 +1,159 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color:#000;
+  color:white;
+}
+
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+  url('https://assets.nflxext.com/ffe/siteui/vlv3/9f4b7c35-1b91-4d11-bf57-6b9b1f9f3c35/4e91a7c2-65b8-4e6d-b64c-ef6f75f1ef1d/IN-en-20240513-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+}
+
+.logo{
+  width:150px;
+}
+
+.signin-btn{
+  background:red;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  width:90%;
+}
+
+.content h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.content h3{
+  font-size:28px;
+  margin-bottom:20px;
+  font-weight:400;
+}
+
+.content p{
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+.email-box{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.email-box input{
+  padding:15px;
+  width:350px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  border-radius:5px;
+}
+
+.email-box button{
+  background:red;
+  color:white;
+  border:none;
+  padding:15px 25px;
+  font-size:18px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.movies{
+  padding:50px;
+}
+
+.movies h2{
+  margin-bottom:20px;
+  font-size:32px;
+}
+
+.movie-row{
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+}
+
+.movie-row img{
+  width:250px;
+  border-radius:10px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.movie-row img:hover{
+  transform:scale(1.08);
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:gray;
+  border-top:1px solid #333;
+  margin-top:40px;
+}
+
+@media(max-width:768px){
+
+  nav{
+    padding:20px;
+  }
+
+  .logo{
+    width:100px;
+  }
+
+  .content h1{
+    font-size:35px;
+  }
+
+  .content h3{
+    font-size:20px;
+  }
+
+  .content p{
+    font-size:16px;
+  }
+
+  .email-box input{
+    width:100%;
+  }
+
+  .movie-row img{
+    width:180px;
+  }
+}
